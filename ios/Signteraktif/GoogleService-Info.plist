@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>906939148059-tl4s0d7t4cmki4nhmbsmul6r2385ttb9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.906939148059-tl4s0d7t4cmki4nhmbsmul6r2385ttb9</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>906939148059-ddao192eophtmpiv8hslpill86ok52l1.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAhzdvqBuSwWey8BM9GIaqI67U7QBrAmJg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>906939148059</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.signteraktif</string>
+	<key>PROJECT_ID</key>
+	<string>signteraktif-d9bd9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>signteraktif-d9bd9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:906939148059:ios:35d639a4d38b2ef49115be</string>
+</dict>
+</plist>
