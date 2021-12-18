@@ -11,7 +11,7 @@ const index = ({ action = null, buttonColor, leftIcon, buttonText, ...props }) =
         leftIcon = <View style={tailwind('pr-3')}><ChatIcon></ChatIcon></View>
     }
 
-    let btnColor = buttonColor ?? 'bg-green-600';
+    let btnColor = buttonColor ?? 'bg-red-600';
     return (
         <TouchableOpacity onPress={action} {...props} style={tailwind(`w-full h-14 flex-row justify-center items-center ${btnColor} rounded-xl py-3`)}>
             {leftIcon && leftIcon}

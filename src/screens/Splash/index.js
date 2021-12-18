@@ -1,6 +1,7 @@
 import messaging from '@react-native-firebase/messaging';
 import React, { useEffect } from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { logoPhoto } from '../../assets';
 import { tailwind } from '../../extra/tailwind';
 
 const index = ({ navigation }) => {
@@ -36,13 +37,14 @@ const index = ({ navigation }) => {
     }, [])
 
     return (
-        <SafeAreaView style={tailwind('h-full w-full bg-green-600')}>
-            <View style={tailwind('flex h-full w-full items-center justify-center ')}>
+        <SafeAreaView style={tailwind('h-full w-full bg-white')}>
+            <View style={tailwind('flex h-full w-full items-center justify-center')}>
+                <Image style={tailwind('mb-3')} source={logoPhoto} />
                 <View style={tailwind('justify-start')}>
-                    <Text style={tailwind(`text-gray-50 text-base font-poppins-500`)}>
+                    <Text style={tailwind(`text-red-500 text-base font-poppins-500`)}>
                         Welcome to
                     </Text>
-                    <Text style={tailwind(`text-white text-3xl font-poppins-600`)}>
+                    <Text style={tailwind(`text-red-500 text-3xl font-poppins-600`)}>
                         SIGNTERAKTIF
                     </Text>
                 </View>

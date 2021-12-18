@@ -1,0 +1,420 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.signteraktif"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:5:5-66
+13-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:5:22-63
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:6:5-80
+14-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:6:22-78
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.75.1] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/ce1147b3e4e04fe87f556bced63a10fa/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.75.1] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/ce1147b3e4e04fe87f556bced63a10fa/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+16-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+17-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+17-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-76
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+18-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
+18-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+19    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+20    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+21    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+22    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+23    <!-- for Samsung -->
+24    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+24-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+24-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+25    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+26    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+27    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+28    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+29    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+30    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+31    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+32    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+33    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+34    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+35    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+36    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+37    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+38    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+39    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/5c6c6f64faf6acb70379aa75fb4e2670/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+40
+41    <application
+41-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:8:5-49:19
+42        android:name="com.signteraktif.MainApplication"
+42-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:9:7-38
+43        android:allowBackup="false"
+43-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:12:7-34
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.3.1] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/47641c1038212c127f26e98ebaa64661/core-1.3.1/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+46-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:11:7-41
+47        android:label="@string/app_name"
+47-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:10:7-39
+48        android:theme="@style/AppTheme"
+48-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:13:7-38
+49        android:usesCleartextTraffic="true" >
+49-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/debug/AndroidManifest.xml:8:9-44
+50        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+50-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/debug/AndroidManifest.xml:11:9-86
+50-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/debug/AndroidManifest.xml:11:19-83
+51        <activity
+51-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:14:7-24:18
+52            android:name="com.signteraktif.MainActivity"
+52-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:15:9-37
+53            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+53-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:17:9-86
+54            android:label="@string/app_name"
+54-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:16:9-41
+55            android:launchMode="singleTask"
+55-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:18:9-40
+56            android:windowSoftInputMode="adjustPan" >
+56-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:19:9-48
+57            <intent-filter>
+57-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:20:9-23:25
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:21:13-65
+58-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:21:21-62
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:22:13-73
+60-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:22:23-70
+61            </intent-filter>
+62        </activity> <!-- Change the value to true to enable pop-up for in foreground on receiving remote notifications (for prevent duplicating while showing local notifications set this to false) -->
+63        <meta-data
+63-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:26:9-27:44
+64            android:name="com.dieam.reactnativepushnotification.notification_foreground"
+64-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:26:21-97
+65            android:value="false" /> <!-- Change the resource name to your App's accent color - or any other color you want -->
+65-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:27:21-42
+66        <meta-data
+66-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:29:9-30:54
+67            android:name="com.dieam.reactnativepushnotification.notification_color"
+67-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:29:21-92
+68            android:resource="@color/white" /> <!-- or @android:color/{name} to use a standard color -->
+68-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:30:21-52
+69        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions" />
+69-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:32:9-108
+69-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:32:19-105
+70        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+70-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:33:9-110
+70-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:33:19-107
+71        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver" >
+71-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:34:9-40:20
+71-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:34:19-115
+72            <intent-filter>
+72-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:35:13-39:29
+73                <action android:name="android.intent.action.BOOT_COMPLETED" />
+73-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:36:17-79
+73-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:36:25-76
+74                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+74-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:37:17-82
+74-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:37:25-79
+75                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+75-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:38:17-81
+75-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:38:25-79
+76            </intent-filter>
+77        </receiver>
+78
+79        <service
+79-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:42:9-48:19
+80            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+80-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:43:13-107
+81            android:exported="false" >
+81-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:44:13-37
+82            <intent-filter>
+82-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:45:13-47:29
+83                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+83-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:46:17-78
+83-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:46:25-75
+84            </intent-filter>
+85        </service>
+86        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" />
+86-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-111
+86-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-108
+87        <service
+87-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-23:19
+88            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+88-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-95
+89            android:exported="false" >
+89-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
+90            <intent-filter>
+90-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:45:13-47:29
+91                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+91-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:46:17-78
+91-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:46:25-75
+92            </intent-filter>
+93        </service>
+94
+95        <receiver
+95-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-32:20
+96            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+96-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-96
+97            android:exported="true"
+97-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-36
+98            android:permission="com.google.android.c2dm.permission.SEND" >
+98-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-73
+99            <intent-filter>
+99-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
+100                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+100-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
+100-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
+101            </intent-filter>
+102        </receiver>
+103
+104        <meta-data
+104-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-36:36
+105            android:name="firebase_messaging_auto_init_enabled"
+105-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-64
+106            android:value="true" />
+106-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-33
+107        <meta-data
+107-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:9-39:32
+108            android:name="com.google.firebase.messaging.default_notification_channel_id"
+108-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-89
+109            android:value="" />
+109-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-29
+110        <meta-data
+110-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:9-42:47
+111            android:name="com.google.firebase.messaging.default_notification_color"
+111-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-84
+112            android:resource="@color/white" />
+112-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-44
+113        <meta-data
+113-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+114            android:name="app_data_collection_default_enabled"
+114-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+115            android:value="true" />
+115-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+116
+117        <service
+117-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
+118            android:name="com.google.firebase.components.ComponentDiscoveryService"
+118-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
+119            android:directBootAware="true"
+119-->[com.google.firebase:firebase-common:20.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/cf44503f512bd01edbb9a42565c54f02/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+120            android:exported="false" >
+120-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
+121            <meta-data
+121-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
+122                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+122-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+125                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+125-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/29c5673bc47885ea14d02ece37658da4/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+128                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+128-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/29c5673bc47885ea14d02ece37658da4/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/29c5673bc47885ea14d02ece37658da4/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-installations:17.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/bfaa8387d061af9163bf78fbdd75ee7b/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+131                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+131-->[com.google.firebase:firebase-installations:17.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/bfaa8387d061af9163bf78fbdd75ee7b/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-installations:17.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/bfaa8387d061af9163bf78fbdd75ee7b/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+133        </service>
+134
+135        <provider
+135-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
+136            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+136-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
+137            android:authorities="com.signteraktif.reactnativefirebaseappinitprovider"
+137-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
+138            android:exported="false"
+138-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+139            android:initOrder="99" />
+139-->[:react-native-firebase_app] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
+140        <provider
+140-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+141            android:name="com.imagepicker.ImagePickerProvider"
+141-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+142            android:authorities="com.signteraktif.imagepickerprovider"
+142-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
+143            android:exported="false"
+143-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+144            android:grantUriPermissions="true" >
+144-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+145            <meta-data
+145-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+146                android:name="android.support.FILE_PROVIDER_PATHS"
+146-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+147                android:resource="@xml/imagepicker_provider_paths" />
+147-->[:react-native-image-picker] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+148        </provider>
+149
+150        <receiver
+150-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+151            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+151-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+152            android:exported="true"
+152-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+153            android:permission="com.google.android.c2dm.permission.SEND" >
+153-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+154            <intent-filter>
+154-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
+155                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+155-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
+155-->[:react-native-firebase_messaging] /Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
+156            </intent-filter>
+157        </receiver>
+158        <!--
+159             FirebaseMessagingService performs security checks at runtime,
+160             but set to not exported to explicitly avoid allowing another app to call it.
+161        -->
+162        <service
+162-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+163            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+163-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+164            android:directBootAware="true"
+164-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+165            android:exported="false" >
+165-->[com.google.firebase:firebase-messaging:22.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/659420486e587c7496744d9234de768f/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+166            <intent-filter android:priority="-500" >
+166-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:45:13-47:29
+167                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+167-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:46:17-78
+167-->/Users/novizarhadisaputra/Documents/Projects/ReactNative/Signteraktif/android/app/src/main/AndroidManifest.xml:46:25-75
+168            </intent-filter>
+169        </service>
+170        <service
+170-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/c1b875a1567d127c75e5d36185d64378/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+171            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+171-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/c1b875a1567d127c75e5d36185d64378/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+172            android:exported="false" >
+172-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/c1b875a1567d127c75e5d36185d64378/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+173            <meta-data
+173-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/c1b875a1567d127c75e5d36185d64378/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+174                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+174-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/c1b875a1567d127c75e5d36185d64378/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+175                android:value="cct" />
+175-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/c1b875a1567d127c75e5d36185d64378/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+176        </service>
+177
+178        <provider
+178-->[com.google.firebase:firebase-common:20.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/cf44503f512bd01edbb9a42565c54f02/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+179            android:name="com.google.firebase.provider.FirebaseInitProvider"
+179-->[com.google.firebase:firebase-common:20.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/cf44503f512bd01edbb9a42565c54f02/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+180            android:authorities="com.signteraktif.firebaseinitprovider"
+180-->[com.google.firebase:firebase-common:20.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/cf44503f512bd01edbb9a42565c54f02/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+181            android:directBootAware="true"
+181-->[com.google.firebase:firebase-common:20.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/cf44503f512bd01edbb9a42565c54f02/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+182            android:exported="false"
+182-->[com.google.firebase:firebase-common:20.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/cf44503f512bd01edbb9a42565c54f02/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+183            android:initOrder="100" />
+183-->[com.google.firebase:firebase-common:20.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/cf44503f512bd01edbb9a42565c54f02/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+184
+185        <service
+185-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/2ebfb026f9cdcbb544bc48708eefe8cc/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+186            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+186-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/2ebfb026f9cdcbb544bc48708eefe8cc/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+187            android:exported="false"
+187-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/2ebfb026f9cdcbb544bc48708eefe8cc/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+188            android:permission="android.permission.BIND_JOB_SERVICE" >
+188-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/2ebfb026f9cdcbb544bc48708eefe8cc/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+189        </service>
+190
+191        <receiver
+191-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/2ebfb026f9cdcbb544bc48708eefe8cc/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+192            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+192-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/2ebfb026f9cdcbb544bc48708eefe8cc/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+193            android:exported="false" />
+193-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/2ebfb026f9cdcbb544bc48708eefe8cc/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+194
+195        <activity
+195-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:23:9-27:75
+196            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+196-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:24:13-93
+197            android:excludeFromRecents="true"
+197-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:25:13-46
+198            android:exported="false"
+198-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:26:13-37
+199            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+199-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:27:13-72
+200        <!--
+201            Service handling Google Sign-In user revocation. For apps that do not integrate with
+202            Google Sign-In, this service will never be started.
+203        -->
+204        <service
+204-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:33:9-37:51
+205            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+205-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:34:13-89
+206            android:exported="true"
+206-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:35:13-36
+207            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+207-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:36:13-107
+208            android:visibleToInstantApps="true" />
+208-->[com.google.android.gms:play-services-auth:19.2.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/e592dcb5d78b81f339f88c9c32d0e5e6/jetified-play-services-auth-19.2.0/AndroidManifest.xml:37:13-48
+209
+210        <activity
+210-->[com.google.android.gms:play-services-base:17.5.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/8ba120df78ef70b0b73857e5c07fa3e3/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+211            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+211-->[com.google.android.gms:play-services-base:17.5.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/8ba120df78ef70b0b73857e5c07fa3e3/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+212            android:exported="false"
+212-->[com.google.android.gms:play-services-base:17.5.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/8ba120df78ef70b0b73857e5c07fa3e3/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+213            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+213-->[com.google.android.gms:play-services-base:17.5.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/8ba120df78ef70b0b73857e5c07fa3e3/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+214
+215        <meta-data
+215-->[com.google.android.gms:play-services-basement:17.5.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/0a06b30f5a999f7a20e7f2a44087cb71/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+216            android:name="com.google.android.gms.version"
+216-->[com.google.android.gms:play-services-basement:17.5.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/0a06b30f5a999f7a20e7f2a44087cb71/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
+217            android:value="@integer/google_play_services_version" />
+217-->[com.google.android.gms:play-services-basement:17.5.0] /Users/novizarhadisaputra/.gradle/caches/transforms-2/files-2.1/0a06b30f5a999f7a20e7f2a44087cb71/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+218    </application>
+219
+220</manifest>

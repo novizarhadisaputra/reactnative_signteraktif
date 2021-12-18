@@ -1,7 +1,7 @@
 var moment = require('moment-timezone');
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Modal, SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Linking, Modal, SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { Calendar, LocaleConfig } from 'react-native-calendars';
 import SelectDropdown from 'react-native-select-dropdown';
 import { useDispatch, useSelector } from 'react-redux';
@@ -52,8 +52,10 @@ const index = ({ navigation, route }) => {
             dispatch({ type: 'SHOW_MODAL', value: { showModal: !showModal } })
             return;
         }
+
         dispatch({ type: 'SET_SUCCESS', value: { message: `Order dengan ID ${response.transaction.id} berhasil`, isError: true } });
         dispatch({ type: 'SHOW_MODAL', value: { showModal: !showModal } });
+        Linking.openURL(response.snap_url);
         setInterval(() => {
             navigation.navigate('History');
         }, 1500);
@@ -159,8 +161,8 @@ const index = ({ navigation, route }) => {
                             <Gap size={'h-1'}></Gap>
                             <SelectDropdown
                                 data={listTime}
-                                buttonStyle={tailwind('border w-full bg-white border-green-400 h-10 rounded-md')}
-                                buttonTextStyle={tailwind('text-green-400')}
+                                buttonStyle={tailwind('border w-full bg-white border-red-400 h-10 rounded-md')}
+                                buttonTextStyle={tailwind('text-red-400')}
                                 onSelect={(selectedItem, index) => {
                                     let data = [{
                                         "schedule_id": selectedItem.id,
@@ -207,7 +209,7 @@ const index = ({ navigation, route }) => {
                 <View style={tailwind('p-4 bg-white w-full')}>
                     <Text style={tailwind('text-base font-poppins-500')}>{t('addNote')}</Text>
                     <Gap size={'h-1'}></Gap>
-                    <View style={tailwind('border border-green-200 bg-gray-100 px-4 py-2 rounded')}>
+                    <View style={tailwind('border border-red-200 bg-gray-100 px-4 py-2 rounded')}>
                         <TextInput
                             onChangeText={changeNotes}
                             multiline={true}
@@ -232,7 +234,7 @@ const index = ({ navigation, route }) => {
                                 </View>
                                 <Text style={tailwind('text-center font-poppins-600')}>{message}</Text>
                                 <Gap size={'h-3'}></Gap>
-                                <TouchableOpacity onPress={() => dispatch({ type: 'SHOW_MODAL', value: { showModal: !showModal } })} style={tailwind('w-1/2 h-10 bg-green-600 rounded justify-center items-center')}>
+                                <TouchableOpacity onPress={() => dispatch({ type: 'SHOW_MODAL', value: { showModal: !showModal } })} style={tailwind('w-1/2 h-10 bg-red-600 rounded justify-center items-center')}>
                                     <Text style={tailwind('text-white')}>Close</Text>
                                 </TouchableOpacity>
                             </View>

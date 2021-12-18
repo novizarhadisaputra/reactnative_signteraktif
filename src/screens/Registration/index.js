@@ -43,7 +43,7 @@ const index = ({ navigation }) => {
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
             <SafeAreaView>
                 <View style={tailwind('h-full w-full justify-center')}>
-                    <Text style={tailwind(`font-poppins-700 text-xl text-center text-green-600`)}>{t('createNewAccount')}</Text>
+                    <Text style={tailwind(`font-poppins-700 text-xl text-center text-red-600`)}>{t('createNewAccount')}</Text>
                     <Gap size={'h-16'}></Gap>
                     <View style={tailwind('px-4 mb-3')}>
                         <Controller
@@ -140,7 +140,7 @@ const index = ({ navigation }) => {
                     <View style={tailwind('px-4 mb-3 flex-row justify-center')}>
                         <Text style={tailwind('font-poppins text-sm')}>{t('haveAccount')}</Text>
                         <TouchableOpacity onPress={gotoLogin}>
-                            <Text style={tailwind(`text-sm pl-1 text-green-600 font-poppins-700`)}>{t('login')}</Text>
+                            <Text style={tailwind(`text-sm pl-1 text-red-600 font-poppins-700`)}>{t('login')}</Text>
                         </TouchableOpacity>
                     </View>
                     <Modal
@@ -160,7 +160,7 @@ const index = ({ navigation }) => {
                                     <Text style={tailwind('text-center font-poppins-600')}>{'Registrasi Berhasil'}</Text>
                                     <Gap size={'h-3'}></Gap>
                                     <View></View>
-                                    <TouchableOpacity onPress={gotoLogin} style={tailwind('w-1/2 h-10 bg-green-600 rounded justify-center items-center')}>
+                                    <TouchableOpacity onPress={gotoLogin} style={tailwind('w-1/2 h-10 bg-red-600 rounded justify-center items-center')}>
                                         <Text style={tailwind('text-white')}>{t('nextToLogin')}</Text>
                                     </TouchableOpacity>
                                 </View>

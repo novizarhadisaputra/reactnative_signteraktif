@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { TabBarCustom } from '../components';
 import {
+    ChangeAvatarScreen,
     ChangeLanguageScreen,
     ChangeNotificationScreen,
     ChangePasswordScreen,
@@ -90,8 +91,9 @@ const LoginNavigation = () => {
             <Stack.Screen name="ChangePassword" component={ChangePasswordNavigation} options={{ headerShown: false }} />
             <Stack.Screen name="ChangeNotification" component={ChangeNotificationNavigation} options={{ headerShown: false }} />
             <Stack.Screen name="ChangeLanguage" component={ChangeLanguageNavigation} options={{ headerShown: false }} />
-            <Stack.Screen name="Order" component={OrderNavigation} options={{ headerShown: false }} />
             <Stack.Screen name="ChangeValueField" component={ChangeValueFieldNavigation} options={{ headerShown: false }} />
+            <Stack.Screen name="ChangeAvatar" component={ChangeAvatarNavigation} options={{ headerShown: false }} />
+            <Stack.Screen name="Order" component={OrderNavigation} options={{ headerShown: false }} />
             <Stack.Screen name="ChooseRegion" component={ChooseRegionNavigation} options={{ headerShown: false }} />
         </Stack.Navigator>
     )
@@ -253,6 +255,14 @@ const ChangeValueFieldNavigation = () => {
     return (
         <Stack.Navigator initialRouteName={'ChangeValueField'}>
             <Stack.Screen name="ChangeValueField" component={ChangeValueFieldScreen} options={{ headerShown: false }} />
+        </Stack.Navigator>
+    )
+}
+
+const ChangeAvatarNavigation = () => {
+    return (
+        <Stack.Navigator initialRouteName={'ChangeAvatar'}>
+            <Stack.Screen name="ChangeAvatar" component={ChangeAvatarScreen} options={{ headerShown: false }} />
         </Stack.Navigator>
     )
 }

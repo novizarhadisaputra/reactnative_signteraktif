@@ -49,7 +49,7 @@ const index = ({ navigation }) => {
                 <View style={tailwind('flex-row px-4 h-1/5 w-full items-center justify-between')}>
                     <View>
                         <View style={tailwind('flex-row')}>
-                            <Image source={dummyPhoto} style={tailwind('rounded-full w-16 h-16')}>
+                            <Image source={user?.image?.url ? { uri: user.image.url } : dummyPhoto} style={tailwind('rounded-full w-16 h-16')}>
                             </Image>
                             {
                                 user ?

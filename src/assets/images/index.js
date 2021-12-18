@@ -1,5 +1,7 @@
-const dummyPhoto = require('./dummy-photo.jpg');
+const dummyPhoto = require('./no-photo.jpg');
+const logoPhoto = require('./logo.png');
 
 export {
-    dummyPhoto
+    dummyPhoto,
+    logoPhoto
 }

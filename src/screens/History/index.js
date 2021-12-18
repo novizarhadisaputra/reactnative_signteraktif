@@ -13,7 +13,7 @@ const index = ({ navigation }) => {
     const dispatch = useDispatch();
     const state = useSelector(state => state);
     const { statusName } = state.historyReducer;
-    const arrStatus = ['allStatus', 'finish', 'ongoing', 'waitingPayment', 'cancel'];
+    const arrStatus = ['allStatus', 'finish', 'paid', 'ongoing', 'waitingPayment', 'cancel'];
     const [mounted, setmounted] = useState(true);
     const [history, sethistory] = useState([]);
     const gotoHome = () => navigation.navigate('Home');
@@ -22,15 +22,15 @@ const index = ({ navigation }) => {
         const response = await getHistoryOrder();
         if (response.transactions) {
             let data = response.transactions;
-            if (t(statusName) == 'Finish') {
+            if (t(statusName) == 'Finish' || t(statusName) == 'Selesai') {
                 data = response.transactions.filter(v => v.status.name == 'Finish');
-            } else if (t(statusName) == 'Cancel') {
+            } else if (t(statusName) == 'Cancel' || t(statusName) == 'Dibatalkan') {
                 data = response.transactions.filter(v => v.status.name == 'Canceled');
-            } else if (t(statusName) == 'Ongoing') {
+            } else if (t(statusName) == 'Ongoing' || t(statusName) == 'Belum Terlaksana') {
                 data = response.transactions.filter(v => v.status.name == 'Ongoing');
-            } else if (t(statusName) == 'Paid') {
+            } else if (t(statusName) == 'Paid' || t(statusName) == 'Terbayar') {
                 data = response.transactions.filter(v => v.status.name == 'Paid');
-            } else if (t(statusName) == 'Paid') {
+            } else if (t(statusName) == 'Waiting Payment' || t(statusName) == 'Menunggu Pembayaran') {
                 data = response.transactions.filter(v => v.status.name == 'Waiting Payment');
             }
             sethistory(data)
@@ -55,6 +55,7 @@ const index = ({ navigation }) => {
                 } else if (t('statusName') == 'Paid') {
                     data = response.transactions.map(v => v.status.name == 'Paid');
                 }
+                console.log(`data`, data)
                 sethistory(data)
             }
             setmounted(false)
@@ -75,8 +76,8 @@ const index = ({ navigation }) => {
                 </View>
                 <View style={tailwind('p-4')}>
                     <View style={tailwind('flex-row')}>
-                        <TouchableOpacity onPress={toggleModal} style={tailwind('flex-row items-center border px-4 py-2 border-green-500 rounded-2xl bg-green-100')}>
-                            <Text style={tailwind(`font-poppins-500 text-green-500 mr-6`)}>{t(statusName)}</Text>
+                        <TouchableOpacity onPress={toggleModal} style={tailwind('flex-row items-center border px-4 py-2 border-red-500 rounded-2xl bg-red-100')}>
+                            <Text style={tailwind(`font-poppins-500 text-red-500 mr-6`)}>{t(statusName)}</Text>
                             <ArrowDownTwoIcon></ArrowDownTwoIcon>
                         </TouchableOpacity>
                     </View>
@@ -95,8 +96,8 @@ const index = ({ navigation }) => {
                                             </View>
                                             <TouchableOpacity onPress={() => navigation.navigate('HistoryDetail', { screen: 'HistoryDetail', params: { transaction: dm } })} style={tailwind('shadow-card px-4 py-3 mb-3 bg-white rounded-2xl')}>
                                                 <View style={tailwind('flex-row')}>
-                                                    <TouchableOpacity style={tailwind('px-2 py-1 bg-green-100 rounded-md mb-2')}>
-                                                        <Text style={tailwind(`font-poppins-400 text-xs text-green-400`)}>{dm.status.name}</Text>
+                                                    <TouchableOpacity style={tailwind('px-2 py-1 bg-gray-100 rounded-md mb-2')}>
+                                                        <Text style={tailwind(`font-poppins-400 text-xs text-gray-400`)}>{dm.status.name}</Text>
                                                     </TouchableOpacity>
                                                 </View>
                                                 <View style={tailwind('flex-row justify-between')}>

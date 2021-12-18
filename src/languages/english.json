@@ -104,7 +104,8 @@
 		"securityCode": "Security Code",
 		"enterSecurityCode": "Enter Security Code",
 		"enterSecurityCodeDescription": "Please check the incoming message in your email, you will receive a security code to create a new password",
-		"account": "Account"
-		
+		"account": "Account",
+        "camera": "Camera",
+        "gallery": "Gallery"
 	}
 }

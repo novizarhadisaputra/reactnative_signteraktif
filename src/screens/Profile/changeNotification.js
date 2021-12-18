@@ -33,8 +33,8 @@ const index = ({ navigation }) => {
                             </View>
                         </View>
                         <Switch
-                            trackColor={{ false: "#767577", true: "#D3EBE4" }}
-                            thumbColor={isActiveNotification ? "#5CC586" : "#f4f3f4"}
+                            trackColor={{ false: "#767577", true: "#FF3B3052" }}
+                            thumbColor={isActiveNotification ? "#FF3B30" : "#f4f3f4"}
                             ios_backgroundColor="#D3EBE4"
                             onValueChange={toggleSwitch}
                             value={isActiveNotification}

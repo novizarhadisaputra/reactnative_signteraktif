@@ -24,9 +24,9 @@ const index = ({ navigation }) => {
     const [partners, setpartners] = useState([])
     const [mounted, setmounted] = useState(true)
     const [modalVisible, setModalVisible] = useState(false)
-    const { hasNotification, hasSubmit } = state.globalReducer;
-    const borderActive = tailwind('border w-24 px-4 py-2 border-green-600 rounded-2xl bg-green-600');
-    const borderNonActive = tailwind('border w-24 color-border-gray px-4 py-2 rounded-2xl');
+    const { hasNotification, hasSubmit, language } = state.globalReducer;
+    const borderActive = tailwind(`border ${language == 'en' ? 'w-24' : ''} px-4 py-2 border-red-600 rounded-2xl bg-red-600`);
+    const borderNonActive = tailwind(`border ${language == 'en' ? 'w-24' : ''} color-border-gray px-4 py-2 rounded-2xl`);
 
     const showCalendar = () => setShow(!show)
     const onSubmit = (data) => changeRegion(data.province);
@@ -199,7 +199,7 @@ const index = ({ navigation }) => {
                                 defaultValue={province}
                             />
                             <Gap size={'h-3'} />
-                            <TouchableOpacity onPress={handleSubmit(onSubmit)} style={tailwind('w-1/2 h-10 bg-green-600 rounded justify-center items-center')}>
+                            <TouchableOpacity onPress={handleSubmit(onSubmit)} style={tailwind('w-1/2 h-10 bg-red-600 rounded justify-center items-center')}>
                                 <Text style={tailwind('text-white')}>{t('search')}</Text>
                             </TouchableOpacity>
                         </View>

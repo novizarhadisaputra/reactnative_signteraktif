@@ -95,7 +95,7 @@ const index = ({ navigation }) => {
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
             <SafeAreaView>
                 <View style={tailwind('h-full w-full justify-center')}>
-                    <Text style={tailwind(`font-poppins-600 text-4xl text-center text-green-600`)}>SIGNTERAKTIF</Text>
+                    <Text style={tailwind(`font-poppins-600 text-4xl text-center text-red-600`)}>SIGNTERAKTIF</Text>
                     <Gap size={'h-16'}></Gap>
                     <View style={tailwind('px-4 mb-3')}>
                         <Controller
@@ -155,7 +155,7 @@ const index = ({ navigation }) => {
                     <View style={tailwind('px-4 mb-3 flex-row justify-center')}>
                         <Text style={tailwind('font-poppins text-sm')}>{t('haveAccount')}</Text>
                         <TouchableOpacity onPress={gotoRegister}>
-                            <Text style={tailwind(`text-sm pl-1 text-green-600 font-poppins-700`)}>{t('signup')}</Text>
+                            <Text style={tailwind(`text-sm pl-1 text-red-600 font-poppins-700`)}>{t('signup')}</Text>
                         </TouchableOpacity>
                     </View>
                     <Modal
@@ -175,7 +175,7 @@ const index = ({ navigation }) => {
                                     <Text style={tailwind('text-center font-poppins-600')}>{'Email and Password not match'}</Text>
                                     <Gap size={'h-3'}></Gap>
                                     <View></View>
-                                    <TouchableOpacity onPress={closeModal} style={tailwind('w-1/2 h-10 bg-green-600 rounded justify-center items-center')}>
+                                    <TouchableOpacity onPress={closeModal} style={tailwind('w-1/2 h-10 bg-red-600 rounded justify-center items-center')}>
                                         <Text style={tailwind('text-white')}>Close</Text>
                                     </TouchableOpacity>
                                 </View>

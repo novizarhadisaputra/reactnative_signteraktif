@@ -2,6 +2,7 @@ import ChangeLanguageScreen from './Profile/changeLanguage';
 import ChangeNotificationScreen from './Profile/changeNotification';
 import ChangePasswordScreen from './Profile/changePassword';
 import ChangeValueFieldScreen from './Profile/changeValueFIeld';
+import ChangeAvatarScreen from './Profile/changeAvatar';
 import ChatScreen from './Chat';
 import ChooseLanguageScreen from './ChooseLanguage';
 import ChooseRegionScreen from './ChooseRegion';
@@ -29,6 +30,7 @@ export {
     ChangeNotificationScreen,
     ChangePasswordScreen,
     ChangeValueFieldScreen,
+    ChangeAvatarScreen,
     ChatScreen,
     ChooseLanguageScreen,
     ChooseRegionScreen,

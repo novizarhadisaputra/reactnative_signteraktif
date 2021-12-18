@@ -25,8 +25,8 @@ const index = ({ navigation, route }) => {
             <View style={tailwind('h-full bg-gray-200 justify-center items-center')}>
                 <SelectDropdown
                     data={countries}
-                    buttonStyle={tailwind('w-3/4 border border-green-400 py-3 rounded-md')}
-                    buttonTextStyle={tailwind('text-green-400')}
+                    buttonStyle={tailwind('w-3/4 border border-red-400 py-3 rounded-md')}
+                    buttonTextStyle={tailwind('text-red-400')}
                     onSelect={(selectedItem, index) => {
                         switch (selectedItem) {
                             case "English":

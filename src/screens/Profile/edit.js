@@ -14,7 +14,7 @@ const edit = ({ navigation }) => {
     const { t, i18n } = useTranslation();
     const dispatch = useDispatch();
     const [show, setShow] = useState(false);
-
+    
     const goBack = () => {
         dispatch({ type: 'SET_TMP_USER', value: { tmpUser: null } });
         navigation.goBack();
@@ -22,6 +22,10 @@ const edit = ({ navigation }) => {
 
     const gotoValueField = (field) => {
         navigation.navigate('ChangeValueField', { screen: 'ChangeValueField', params: { field } });
+    }
+
+    const gotoChangeAvatar = () => {
+        navigation.navigate('ChangeAvatar');
     }
 
     const save = async () => {
@@ -50,9 +54,9 @@ const edit = ({ navigation }) => {
                 <View style={tailwind('justify-center items-center px-4')}>
                     <Text style={tailwind('font-poppins-600 text-sm')}>{t('photoProfile')}</Text>
                     <Gap size={'h-2'} />
-                    <Image style={tailwind('h-20 w-20 rounded-full')} source={dummyPhoto} />
+                    <Image style={tailwind('h-20 w-20 rounded-full')} source={user?.image?.url ? { uri: user.image.url } : dummyPhoto} />
                     <Gap size={'h-2'} />
-                    <TouchableOpacity onPress={()=> console.log(`object`)}>
+                    <TouchableOpacity onPress={gotoChangeAvatar}>
                         <Text style={tailwind('font-poppins-400 text-xs')}>{t('editPhoto')}</Text>
                     </TouchableOpacity>
                     <Gap size={'h-1'} />
@@ -79,7 +83,7 @@ const edit = ({ navigation }) => {
                         <Text style={tailwind('pl-4 font-poppins-400 text-sm')}>{tmpUser ? tmpUser.phone : user.phone}</Text>
                     </TouchableOpacity>
                     <Gap size={'h-20'} />
-                    <TouchableOpacity onPress={save} style={tailwind('flex-row w-full justify-center items-center border border-green-600 bg-green-400 h-14 rounded-lg')}>
+                    <TouchableOpacity onPress={save} style={tailwind('flex-row w-full justify-center items-center border border-red-600 bg-red-400 h-14 rounded-lg')}>
                         <Text style={tailwind('text-base font-poppins-600 text-white')}>{'Simpan'}</Text>
                     </TouchableOpacity>
                 </View>

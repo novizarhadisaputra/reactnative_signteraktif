@@ -104,6 +104,8 @@
         "securityCode": "Kode Keamanan",
         "enterSecurityCode": "Masukkan Kode Keamanan",
 		"enterSecurityCodeDescription": "Silahkan cek pesan masuk di email anda, anda akan menerima kode keamanan untuk membuat kata sandi baru",
-        "account": "Akun"
+        "account": "Akun",
+        "camera": "Kamera",
+        "gallery": "Galeri"
     }
 }

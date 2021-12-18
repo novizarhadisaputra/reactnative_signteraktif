@@ -21,9 +21,9 @@ const index = ({ navigation }) => {
     const { now, sex, province } = state.homeReducer;
     const [partners, setpartners] = useState([])
     const [mounted, setmounted] = useState(true)
-    const { hasNotification, hasSubmit } = state.globalReducer;
-    const borderActive = tailwind('border w-24 px-4 py-2 border-green-600 rounded-2xl bg-green-600');
-    const borderNonActive = tailwind('border w-24 color-border-gray px-4 py-2 rounded-2xl');
+    const { hasNotification, hasSubmit, language } = state.globalReducer;
+    const borderActive = tailwind(`border ${language == 'en' ? 'w-24': ''} px-4 py-2 border-red-600 rounded-2xl bg-red-600`);
+    const borderNonActive = tailwind(`border ${language == 'en' ? 'w-24': ''} color-border-gray px-4 py-2 rounded-2xl`);
 
     const changeRegion = async (selectedRegion) => {
         setmounted(true);
@@ -103,8 +103,6 @@ const index = ({ navigation }) => {
             setmounted(false);
         }
 
-
-
         if (mounted) {
             clearReduxLogin();
             loadPartnerData();
@@ -121,7 +119,7 @@ const index = ({ navigation }) => {
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
             <SafeAreaView>
                 <View style={tailwind('w-full h-full bg-gray-100')}>
-                    <View style={tailwind('absolute h-36 w-full bg-green-600')} />
+                    <View style={tailwind('absolute h-36 w-full bg-red-600')} />
                     <View style={tailwind('flex-row p-4 items-center justify-between')}>
                         <Text style={tailwind(`font-poppins-600 text-2xl text-white`)}>{'Signteraktif'}</Text>
                         <TouchableOpacity onPress={gotoNotification}>
@@ -167,19 +165,19 @@ const index = ({ navigation }) => {
                                 {t('signLanguageInterpreter')}
                             </Text>
                             <TouchableOpacity onPress={gotoParnerList}>
-                                <Text style={tailwind('text-green-600')}>{t('seeMore')}</Text>
+                                <Text style={tailwind('text-red-600')}>{t('seeMore')}</Text>
                             </TouchableOpacity>
                         </View>
                         <Gap size={'h-4'}></Gap>
                         <View style={tailwind('flex-row w-11/12 justify-between')}>
                             <TouchableOpacity onPress={() => changeSex('All')} style={sex == 'All' ? borderActive : borderNonActive}>
-                                <Text style={tailwind(`${sex == 'All' ? 'font-poppins-500 text-center text-white' : 'text-center font-poppins-400 opacity-60'}`)}>{t('all')}</Text>
+                                <Text style={tailwind(`${sex == 'All' ? 'font-poppins-500 text-center text-white' : 'text-center text-black font-poppins-400 opacity-60'}`)}>{t('all')}</Text>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => changeSex('Man')} style={sex == 'Man' ? borderActive : borderNonActive}>
-                                <Text style={tailwind(`${sex == 'Man' ? 'font-poppins-500 text-center text-white' : 'text-center font-poppins-400 opacity-60'}`)}>{t('man')}</Text>
+                                <Text style={tailwind(`${sex == 'Man' ? 'font-poppins-500 text-center text-white' : 'text-center text-black font-poppins-400 opacity-60'}`)}>{t('man')}</Text>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => changeSex('Woman')} style={sex == 'Woman' ? borderActive : borderNonActive}>
-                                <Text style={tailwind(`${sex == 'Woman' ? 'font-poppins-500 text-center text-white' : 'text-center font-poppins-400 opacity-60'}`)}>{t('woman')}</Text>
+                                <Text style={tailwind(`${sex == 'Woman' ? 'font-poppins-500 text-center text-white' : 'text-center text-black font-poppins-400 opacity-60'}`)}>{t('woman')}</Text>
                             </TouchableOpacity>
                         </View>
                         <Gap size={'h-4'}></Gap>

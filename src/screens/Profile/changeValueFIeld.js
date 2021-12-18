@@ -89,7 +89,7 @@ const changeValueField = ({ navigation, route }) => {
                         defaultValue={tmpUser ? tmpUser[field] : user[field]}
                     />
                     <Gap size={'h-10'} />
-                    <TouchableOpacity onPress={handleSubmit(onSubmit)} style={tailwind('flex-row w-full justify-center items-center border border-green-600 bg-green-400 h-14 rounded-lg')}>
+                    <TouchableOpacity onPress={handleSubmit(onSubmit)} style={tailwind('flex-row w-full justify-center items-center border border-red-600 bg-red-400 h-14 rounded-lg')}>
                         <Text style={tailwind('text-base font-poppins-600 text-white')}>{'Simpan'}</Text>
                     </TouchableOpacity>
                 </View>
